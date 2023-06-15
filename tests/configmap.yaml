@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm1
+  namespace: ns1-configmap
+data:
+  cm1-k1: cm1-v1
+  cm1-k2: cm1-v2
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm2
+  namespace: ns1-configmap
+data:
+  cm2-k1: cm2-v1
+  cm2-k2: cm2-v2
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm3
+  namespace: ns2-configmap
+data:
+  cm3-k1: cm3-v1
+  cm3-k2: cm3-v2
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm4
+  namespace: ns2-configmap
+data:
+  cm4-k1: cm4-v1
+  cm4-k2: cm4-v2
